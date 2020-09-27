@@ -1,0 +1,47 @@
+# YouTube
+https?://(?:(?:www\.|)youtube\.com|youtu.be)/(?:channel/|embed/|)[-a-zA-Z0-9?&=_]*
+# data urls
+data:[a-zA-Z=;,/0-9+-]+
+# Google Docs
+/docs\.google\.com/[a-z]+/d/(?:e/|)[0-9a-zA-Z_-]+/
+# Google Groups
+https://groups\.google\.com/d/topic/[^/]+/[a-zA-Z0-9]+/discussion
+# Goo.gl
+/goo\.gl/[a-zA-Z0-9]+
+# GitHub SHAs
+/github\.com/[^/]+/[^/]+/[^/]+/[0-9a-f]+\b
+# githubusercontent
+/[a-z-]+\.githubusercontent\.com/[-a-zA-Z0-9?&=_\/.]*
+# gist github
+/gist\.github\.com/[^/]+/[0-9a-f]+
+# imgur
+\.imgur\.com/[^.]+
+# discord
+/discord(?:app\.com|\.gg)/(?:invite/)?[a-zA-Z0-9]{7,8}
+# now.sh
+/[0-9a-z-.]+\.now\.sh\b
+# chromatic.com
+/\S+.chromatic.com\S*[")]
+# sha-1
+"[0-9a-f]{40}"
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#|\%23)[0-9a-fA-FgGrR]{2,}[uU]?[lL]{0,2}\b
+# hex in url queries
+=[0-9a-fA-F]+&
+# URL escaped characters
+\%[0-9A-F]{2}
+# uuid:
+[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}
+# d=
+ d="[^"]+(?:"|$)
+#
+^> In der Bilanz.*$
+# ignore long runs of a single character:
+\b([A-Za-z])\1{3,}\b
+# Lorem
+^.*\b(?:aliquet|dolor|durum|elit|erat|ipsum|libero|lorem|massa|velit)\b.*$
+# "projectToken": "tl92yzsj6w"
+"projectToken": "[a-z0-9]{10,11}"
+# escapes
+\[[0-39]\d?m
+\\\\n

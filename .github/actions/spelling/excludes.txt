@@ -1,0 +1,11 @@
+^\.github/actions/spelling/
+ignore$
+\.gif$
+\.gitkeep$
+\.ico$
+\.lock$
+\.jpg$
+\.mailmap$
+\.mp4$
+\.png$
+\.svg$
